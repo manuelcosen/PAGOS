@@ -1,0 +1,12 @@
+body { font-family: Arial; background: #f4f4f4; margin: 0; }
+header { background: #004d40; color: white; padding: 1rem; text-align: center; }
+#controls { padding: 1rem; background: #e0f2f1; }
+#workspace { display: flex; height: 300px; padding: 1rem; gap: 1rem; }
+.panel { flex: 1; background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 0 5px #ccc; }
+.node-wrapper { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem; }
+.node { background: #b2dfdb; padding: 0.5rem; border-radius: 6px; cursor: grab; text-align: center; }
+.node.dragging { opacity: 0.5; }
+#svg-wrapper { position: relative; flex: 0.5; }
+svg#line { position: absolute; top: 0; left: 0; }
+table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+th, td { padding: 0.5rem; border: 1px solid #ccc; }

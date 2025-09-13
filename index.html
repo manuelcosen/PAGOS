@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Pagos</title>
+    <link rel="stylesheet" href="static/style.css" />
+</head>
+<body>
+    <header>
+        <h1>Registro de pagos</h1>
+        <p>Ingresá el monto, arrastrá una cuenta a una empresa y registrá el pago.</p>
+    </header>
+
+    <section id="controls">
+        <label for="amount-input">💵 Monto en pesos:</label>
+        <input type="number" id="amount-input" placeholder="Ej: 15000" />
+        <span id="amount-error" class="error"></span>
+    </section>
+
+    <section id="workspace">
+        <div class="panel" id="accounts-panel">
+            <h3>Cuentas</h3>
+            <div id="accounts-wrapper" class="node-wrapper"></div>
+        </div>
+
+        <div id="svg-wrapper">
+            <svg id="lines" width="100%" height="100%"></svg>
+        </div>
+
+        <div class="panel" id="companies-panel">
+            <h3>Empresas</h3>
+            <div id="companies-wrapper" class="node-wrapper"></div>
+        </div>
+    </section>
+
+    <section id="results">
+        <h3>📋 Pagos registrados</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Monto</th>
+                    <th>Cuenta</th>
+                    <th>Empresa</th>
+                </tr>
+            </thead>
+            <tbody id="payments-body"></tbody>
+        </table>
+    </section>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
